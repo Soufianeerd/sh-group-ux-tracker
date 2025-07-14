@@ -1,0 +1,239 @@
+/* Style principal inspiré de foyer.lu */
+body {
+    font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, #2266aa 0%, #ffffff 100%);
+    color: #003366;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5em 1.3em;
+    border-radius: 8px;
+    margin: 0 0.5em;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-link.active {
+    background: #fff;
+    color: #2266aa;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.08);
+}
+.background-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: 1200px;
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    filter: blur(0.5px) grayscale(0.2);
+}
+
+header {
+    background: linear-gradient(90deg, #003366 60%, #2266aa 100%);
+    color: #fff;
+    padding: 1.5rem 2rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 51, 102, 0.10);
+}
+header .logo {
+    height: 48px;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2em;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+}
+header nav a.active, header nav a:hover {
+    border-bottom: 2px solid #ffb800;
+}
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+section {
+    margin-bottom: 2.5rem;
+}
+.parcours-types button {
+    background: linear-gradient(90deg, #2266aa 60%, #003366 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1em 2em;
+    margin: 0.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7em;
+    box-shadow: 0 1px 4px rgba(34,102,170,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.parcours-types button:hover {
+    background: #003366;
+    color: #fff;
+}
+.parcours-types .icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    filter: grayscale(1) brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5) brightness(1.2);
+}
+.parcours-types button:hover {
+    background: #003366;
+    color: #fff;
+}
+.kanban-board {
+    display: flex;
+    gap: 2em;
+    margin-top: 1em;
+}
+.kanban-column {
+    background: #f7f8fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1em;
+    min-width: 220px;
+}
+.kanban-column h3 {
+    color: #003366;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+.kanban-task {
+    background: #fff;
+    border-left: 4px solid #ffb800;
+    border-radius: 4px;
+    padding: 0.7em 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    font-size: 0.97em;
+}
+footer {
+    background: linear-gradient(90deg, #003366 60%, #2266aa 100%);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 3em;
+    border-radius: 0 0 12px 12px;
+}
+
+#simulation-log {
+    background: #f7f8fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin: 2em 0;
+    padding: 1em 1.5em;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.04);
+}
+#simulation-log h3 {
+    color: #003366;
+    margin-top: 0;
+}
+#simulation-log .log-content {
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 1em;
+    max-height: 220px;
+    overflow-y: auto;
+    color: #2266aa;
+    background: #fff;
+    border-radius: 6px;
+    padding: 0.7em 1em;
+    border: 1px solid #e9ecef;
+}
+#kpi-charts canvas {
+    margin-bottom: 1.2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.04);
+    padding: 0.5em;
+    max-width: 540px;
+    max-height: 320px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+#decision-tables {
+    margin-top: 1.5em;
+    background: #f7f8fa;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0,51,102,0.03);
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#decision-tables table {
+    min-width: 220px;
+    font-size: 1em;
+    background: #fff;
+    border-radius: 7px;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0,51,102,0.03);
+    margin-bottom: 0;
+}
+#decision-tables th, #decision-tables td {
+    padding: 0.6em 1.1em;
+    border-bottom: 1px solid #e9ecef;
+    text-align: left;
+}
+#decision-tables th {
+    background: #f7f8fa;
+    color: #003366;
+    font-weight: 600;
+}
+#decision-tables td {
+    color: #2266aa;
+}
+#decision-tables tr:last-child td {
+    border-bottom: none;
+}
+#decision-tables h3 {
+    margin-top: 0;
+    font-size: 1.08em;
+    color: #2266aa;
+    margin-bottom: 0.5em;
+}
+#ux-reco ul {
+    list-style: disc inside;
+    color: #2266aa;
+    font-size: 1.08em;
+}
+#ba-toolkit {
+    margin-top: 2em;
+    background: #f7f8fa;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 1px 3px rgba(0,51,102,0.03);
+}
+#jira-ticket {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 1em;
+    font-size: 0.97em;
+    color: #333;
+}

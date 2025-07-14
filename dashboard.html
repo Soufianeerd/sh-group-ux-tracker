@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH UX Tracker – Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="assets/logo.png" alt="SH Group" class="background-logo" />
+    <header style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 140px; background: linear-gradient(90deg, #003366 60%, #2266aa 100%);">
+    <img src="assets/logo.png" alt="SH Group" class="logo" style="height:80px;max-width:220px; display:block; margin:auto;">
+    <nav style="margin-top: 10px;">
+        <a href="index.html" class="nav-link">Simulation</a>
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    </nav>
+</header>
+    <main>
+        <section id="kpi-charts">
+            <h2>KPI & Tableaux décisionnels</h2>
+            <canvas id="conversionChart"></canvas>
+            <canvas id="abandonChart"></canvas>
+            <canvas id="engagementChart"></canvas>
+            <div id="decision-tables"></div>
+        </section>
+        <section id="ux-reco">
+            <h2>Recommandations UX</h2>
+            <ul id="reco-list"></ul>
+        </section>
+        <section id="ba-toolkit">
+            <h2>Business Analyst Toolkit</h2>
+            <div id="powerbi-guide">
+                <h3>Exploiter les données dans Power BI</h3>
+                <p>Exportez les données anonymisées au format CSV ou JSON puis importez-les dans Power BI pour approfondir l’analyse (voir README).</p>
+                <button id="export-csv">Exporter CSV</button>
+                <button id="export-json">Exporter JSON</button>
+            </div>
+            <div id="jira-example">
+                <h3>Exemple de ticket / user story (Jira)</h3>
+                <pre id="jira-ticket">
+// Exemple généré dynamiquement ou statique
+                </pre>
+            </div>
+        </section>
+    </main>
+    <!-- Bouton flottant retour simulation -->
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        const simuBtn = document.createElement('button');
+        simuBtn.textContent = 'Retour à la Simulation';
+        simuBtn.style.position = 'fixed';
+        simuBtn.style.bottom = '32px';
+        simuBtn.style.right = '32px';
+        simuBtn.style.background = '#2266aa';
+        simuBtn.style.color = '#fff';
+        simuBtn.style.padding = '1em 2em';
+        simuBtn.style.border = 'none';
+        simuBtn.style.borderRadius = '8px';
+        simuBtn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.10)';
+        simuBtn.style.fontSize = '1.1em';
+        simuBtn.style.fontWeight = 'bold';
+        simuBtn.style.cursor = 'pointer';
+        simuBtn.style.zIndex = '9999';
+        simuBtn.onmouseenter = () => simuBtn.style.background = '#185089';
+        simuBtn.onmouseleave = () => simuBtn.style.background = '#2266aa';
+        simuBtn.onclick = () => { location.href = 'index.html'; };
+        document.body.appendChild(simuBtn);
+    });
+    </script>
+    <footer>
+        <small>&copy; 2025 SH Group – Démo Business Analyst Digital</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/reco.js"></script>
+</body>
+</html>

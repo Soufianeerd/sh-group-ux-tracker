@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foyer UX Tracker – Parcours de souscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="assets/logo.png" alt="SH Group" class="background-logo" />
+    <header style="display: flex; justify-content: center; align-items: center; height: 120px; background: linear-gradient(90deg, #003366 60%, #2266aa 100%);">
+    <img src="assets/logo.png" alt="SH Group" class="logo" style="height:90px;max-width:320px; display:block; margin:auto;">
+</header>
+    <main>
+        <section id="parcours-selection">
+            <h2>Simuler un parcours client</h2>
+            <p>Sélectionnez un type d’assurance ou de service&nbsp;:</p>
+            <div class="parcours-types">
+                <button data-type="auto">Assurance Auto</button>
+                <button data-type="sante">Assurance Santé</button>
+                <button data-type="vie">Assurance Vie</button>
+                <button data-type="habitation">Assurance Habitation</button>
+                <button data-type="patrimoine">Gestion de Patrimoine</button>
+            </div>
+        </section>
+        <section id="parcours-simulation" style="display:none">
+            <!-- Étapes du parcours générées dynamiquement -->
+        </section>
+        <section id="kanban-user-stories">
+            <h2>Tableau de bord des actions</h2>
+            <div class="kanban-board" style="gap:2.5em;">
+                <div class="kanban-column" id="kanban-todo">
+                    <h3>Tâches à faire</h3>
+                    <!-- JS: tâches à faire -->
+                </div>
+                <div class="kanban-column" id="kanban-done">
+                    <h3>Tâches réalisées</h3>
+                    <!-- JS: tâches faites -->
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; 2025 SH Group – Démo Business Analyst Digital</small>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+</html>
