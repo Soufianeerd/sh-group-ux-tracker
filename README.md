@@ -10,7 +10,7 @@ Démo métier pour Business Analyst Digital –
 
 ## Contexte Foyer Groupe
 
-Foyer Groupe Luxembourg est un acteur majeur de l’assurance, de la prévoyance et de la gestion de patrimoine. Dans un contexte de digitalisation croissante, l’analyse des parcours clients digitaux est essentielle pour améliorer la conversion, limiter l’abandon et optimiser l’expérience utilisateur.
+SH-Grp est un acteur majeur de l’assurance, de la prévoyance et de la gestion de patrimoine. Dans un contexte de digitalisation croissante, l’analyse des parcours clients digitaux est essentielle pour améliorer la conversion, limiter l’abandon et optimiser l’expérience utilisateur.
 
 ## Fonctionnalités principales
 - Simulation de parcours clients pour plusieurs produits (auto, santé, vie, habitation, patrimoine)
