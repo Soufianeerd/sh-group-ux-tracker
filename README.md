@@ -1,12 +1,12 @@
-# Foyer UX Tracker
+# SH-Grp UX Tracker
 
-Démo métier pour Business Analyst Digital – Foyer Groupe Luxembourg
+Démo métier pour Business Analyst Digital –
 
 ---
 
 ## Présentation du projet
 
-**Foyer UX Tracker** est une application web de démonstration permettant de simuler et d’analyser le parcours utilisateur digital lors de la souscription à différents produits d’assurance ou de gestion de patrimoine. Elle met en avant le rôle du Business Analyst dans l’optimisation de l’expérience client et le suivi des KPI clés.
+**SH-Grp UX Tracker** est une application web de démonstration permettant de simuler et d’analyser le parcours utilisateur digital lors de la souscription à différents produits d’assurance ou de gestion de patrimoine. Elle met en avant le rôle du Business Analyst dans l’optimisation de l’expérience client et le suivi des KPI clés.
 
 ## Contexte Foyer Groupe
 
@@ -111,7 +111,7 @@ Critères d’acceptation :
 ## Structure du projet
 
 ```
-foyer-ux-tracker/
+SH-Grp-ux-tracker/
 ├── index.html
 ├── dashboard.html
 ├── css/style.css
